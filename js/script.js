@@ -61,13 +61,17 @@ const quotes = [
 ***/
 
 function getRandomQuote() {
-  let randomNumber = Math.floor(Math.random() * quotes.length);
-  let randomQuote = quotes[randomNumber];
-  return randomQuote
+  const randomNumber = Math.floor(Math.random() * quotes.length);
+  const randomQuoteSelection = quotes[randomNumber];
+  return randomQuoteSelection
 }
+
 /***
  * `printQuote` function
 ***/
+
+
+
 
 
 
