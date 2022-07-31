@@ -82,9 +82,10 @@ function printQuote() {
     displayQuote += '<span class="citation">`${randomQuote.year}`</span>'
   };
   displayQuote += '</p>';
+
 }
 
-
+document.quote_box.innerHTML = quote_box
 
 
 /***
