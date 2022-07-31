@@ -70,7 +70,19 @@ function getRandomQuote() {
  * `printQuote` function
 ***/
 
-
+function printQuote() {
+  const randomQuote = getRandomQuote();
+  let quote_box = document.getElementById("quote-box");
+  let displayQuote = '<p class="quote">`${randomQuote.quote}`</p>' +
+  '<p class="source">`${randomQuote.source}`';
+  if (randomQuote.citation) {
+    displayQuote += '<span class="citation">`${randomQuote.citation}`</span>'
+  };
+  if (randomQuote.year) {
+    displayQuote += '<span class="citation">`${randomQuote.year}`</span>'
+  };
+  displayQuote += '</p>';
+}
 
 
 
