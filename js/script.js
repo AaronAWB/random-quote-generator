@@ -3,7 +3,7 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-//array of quote objects to store quotes that will be randomly generated
+// array of quote objects to store quotes that will be randomly generated
 
 const quotes = [
   {
@@ -78,7 +78,7 @@ function printQuote() {
   quote_box.innerHTML = displayQuote;
 }
 
-//cycles through randomly generated quotes every 10 seconds
+// updates the random quote displayed on the page every 10 seconds
 
 setInterval(printQuote, 10000)
 
