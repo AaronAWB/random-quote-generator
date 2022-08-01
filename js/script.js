@@ -48,11 +48,19 @@ const quotes = [
   },
 ]
 
+// returns a random object from the 'quotes' array
+
 function getRandomQuote() {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   let randomQuoteSelection = quotes[randomNumber];
   return randomQuoteSelection
 }
+
+/*** 
+* replaces contents of quote box with 
+* keys and properties of object randomly selected 
+* by 'getRandomQuote' function 
+***/
 
 function printQuote() {
   let randomQuote = getRandomQuote();
