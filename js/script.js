@@ -3,6 +3,8 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
+//array of quote objects to store quotes that will be randomly generated
+
 const quotes = [
   {
     quote: "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.",
@@ -75,5 +77,9 @@ function printQuote() {
   displayQuote += '</p>';
   quote_box.innerHTML = displayQuote;
 }
+
+//cycles through randomly generated quotes every 10 seconds
+
+setInterval(printQuote, 10000)
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
