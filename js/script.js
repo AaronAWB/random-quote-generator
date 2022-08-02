@@ -11,49 +11,44 @@ const quotes = [
     source: "Michael Scott",
     citation: "'The Office' Season 2, Episode 6: 'The Fight'",
     year: "2005"
-    fame: "iconic"
+    fame: "Famous Quote!"
   },
   {
     quote: "I'm not superstitious, but I am a little stitious.",
     source: "Michael Scott",
     citation: "'The Office' Season 4, Episode 1: 'Fun Run'",
     year: "2007"
-    fame: "famous"
+    fame: "Famous Quote!"
   },
   {
     quote: "Me think, why waste time say lot word when few word do trick.",
     source: "Kevin Malone",
     citation: "'The Office' Season 8, Episode 2: 'The Incentive'",
     year: "2011"
-    fame: "Deep Cut"
   },
   {
     quote: "I just want to lie on the beach and eat hot dogs. That's all I've ever wanted.",
     source: "Kevin Malone",
     citation: "'The Office' Season 3, Episode 22: 'Beach Games'",
     year: "2007"
-    fame: "Deep Cut"
   },
   {
     quote: "And I knew exactly what to do. But in a much more real sense, I had no idea what to do.",
     source: "Michael Scott",
     citation: "'The Office' Season 5, Episode 14: 'Stress Relief Part 1'",
     year: "2009"
-    fame: "Well known"
   },
   {
     quote: "There's a lot of beauty in ordinary things. Isn't that kind of the point?",
     source: "Pam Beesly",
     citation: "'The Office' Season 9, Episode 23: 'Finale'",
     year: "2013"
-    fame: "Well known"
   },
   {
     quote: "If I don't have some cake soon, I might die.",
     source: "Stanley Hudson",
     citation: "'The Office' Season 4, Episode 7: 'Survivor Man'",
     year: "2007"
-    fame: "Deep Cut"
   },
 ]
 
@@ -93,6 +88,9 @@ function printQuote() {
   };
   if (randomQuote.year) {
     displayQuote += `<span class="citation">${randomQuote.year}</span>`
+  };
+  if (randomQuote.fame) {
+    displayQuote += `<span class="citation">${randomQuote.fame}</span>`
   };
   displayQuote += '</p>';
   quote_box.innerHTML = displayQuote;
