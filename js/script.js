@@ -57,7 +57,12 @@ function getRandomQuote() {
   return quotes[randomNumber];
 }
 
-// updates the background color to a random color
+
+/*** 
+* updates the background color to a random color
+* function from https://css-tricks.com/snippets/javascript/random-hex-color/
+* author: Chris Coyier
+***/
 
 function randomBackgroundColor() {
   let randomColor = Math.floor(Math.random() * 16777215).toString(16);
