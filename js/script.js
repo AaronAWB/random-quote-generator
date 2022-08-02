@@ -3,7 +3,7 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// array of quote objects to store quotes that will be randomly generated
+// array of quote objects to store quotes that will be randomly selected and displayed on the page
 
 const quotes = [
   {
@@ -57,6 +57,14 @@ function getRandomQuote() {
   return quotes[randomNumber];
 }
 
+// updates the background color to a random color
+
+function randomBackgroundColor() {
+  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
+
 /*** 
 * replaces contents of quote box with 
 * keys and properties of object randomly selected 
@@ -76,10 +84,12 @@ function printQuote() {
   };
   displayQuote += '</p>';
   quote_box.innerHTML = displayQuote;
+  randomBackgroundColor();
 }
 
 // updates the random quote displayed on the page every 10 seconds
 
 setInterval(printQuote, 10000)
+
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
