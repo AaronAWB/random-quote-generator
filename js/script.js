@@ -10,14 +10,14 @@ const quotes = [
     quote: "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.",
     source: "Michael Scott",
     citation: "'The Office' Season 2, Episode 6: 'The Fight'",
-    year: "2005"
+    year: "2005",
     fame: "Famous Quote!"
   },
   {
     quote: "I'm not superstitious, but I am a little stitious.",
     source: "Michael Scott",
     citation: "'The Office' Season 4, Episode 1: 'Fun Run'",
-    year: "2007"
+    year: "2007",
     fame: "Famous Quote!"
   },
   {
