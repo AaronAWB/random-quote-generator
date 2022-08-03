@@ -58,6 +58,7 @@ function getRandomQuote() {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
+
 // returns random RGB value
 
 function getRandomRGB() {
