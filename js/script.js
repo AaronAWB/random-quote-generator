@@ -58,18 +58,17 @@ function getRandomQuote() {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 }
+// returns random RGB value
 
+function getRandomRGB() {
+  return Math.floor(Math.random() * 256);
+}
 
-/*** 
-* updates the background color to a random color
-* function from https://css-tricks.com/snippets/javascript/random-hex-color/
-* author: Chris Coyier
-***/
+// returns RGB color from random RGB values
 
-function randomBackgroundColor() {
-  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  document.body.style.backgroundColor = "#" + randomColor;
-  color.innerHTML = "#" + randomColor;
+function randomColor() {
+  let color = `rgb(${getRandomRGB()},${getRandomRGB()},${getRandomRGB()})`;
+  return color
 }
 
 /*** 
@@ -94,10 +93,10 @@ function printQuote() {
   };
   displayQuote += '</p>';
   quote_box.innerHTML = displayQuote;
-  randomBackgroundColor();
+  document.body.style.backgroundColor = randomColor()
 }
 
-// updates the random quote displayed on the page every 10 seconds
+// updates the random quote and background color displayed on the page at 10 second intervals
 
 setInterval(printQuote, 10000)
 
